@@ -14,10 +14,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("x", "<leader>p", '"_dp')
+vim.keymap.set("x", "<leader>p", '"_dhp')
 vim.keymap.set("x", "<leader>P", '"_dP')
--- vim.keymap.set("n", "<leader>d", '"_d')
--- vim.keymap.set("v", "<leader>d", '"_d')
+vim.keymap.set("x", "<leader>c", '"_c')
+vim.keymap.set("x", "<leader>d", '"_d')
 
 vim.keymap.set("n", "<C-q>", function()
   local wins = vim.api.nvim_tabpage_list_wins(0)

@@ -5,3 +5,4 @@
 vim.opt.scrolloff = 8
 vim.opt.spelllang = "en_us,ru_ru"
 vim.opt.winbar = "%=%m %f"
+vim.opt.spelllang = "en_us,ru_ru"
