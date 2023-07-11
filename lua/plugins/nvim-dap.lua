@@ -37,7 +37,7 @@ return {
     "mfussenegger/nvim-dap-python",
     dependencies = { "mfussenegger/nvim-dap" },
     config = function()
-      require("dap-python").setup("/usr/bin/python3.10")
+      require("dap-python").setup("/home/den4ick240/Programming/Contorra/Green-Undulation/.venv/bin/python3.10")
     end,
   },
   {

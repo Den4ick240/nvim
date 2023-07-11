@@ -23,6 +23,9 @@ return {
                 rope = {
                   folder = "~/rope",
                 },
+                jedi_completion = {
+                  enabled = false,
+                }
               },
             },
           },
