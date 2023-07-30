@@ -8,4 +8,4 @@ sudo install lazygit /usr/local/bin
 rm lazygit
 rm lazygit.tar.gz
 
-ln -s $(which lazygit) ~/.local/bin/lg
+ln -s $(which lazygit) /usr/local/bin/lg
