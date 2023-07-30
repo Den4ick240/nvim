@@ -24,28 +24,12 @@ return {
                   folder = "~/rope",
                 },
                 jedi_completion = {
-                  enabled = false,
+                  enabled = true,
                 }
               },
             },
           },
         },
-      },
-      setup = {
-        pylsp = function()
-          require("lspconfig").pylsp.setup({
-            settings = {
-              pylsp = {
-                plugins = {
-                  pycodestyle = {
-                    ignore = { "W391" },
-                    maxLineLength = 100,
-                  },
-                },
-              },
-            },
-          })
-        end,
       },
     },
   },
