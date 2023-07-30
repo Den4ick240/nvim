@@ -3,6 +3,7 @@ return {
   opts = {
     sources = {
       require("null-ls").builtins.formatting.black,
+      require("null-ls").builtins.formatting.beautysh,
     },
   },
 }

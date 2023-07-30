@@ -4,6 +4,8 @@ return {
     ensure_installed = {
       "black",
       "pyright",
+      "bash-language-server",
+      "beautysh",
     },
   },
 }
