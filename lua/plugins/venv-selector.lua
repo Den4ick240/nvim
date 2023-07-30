@@ -3,6 +3,7 @@
 --   pattern = "*",
 --   callback = function()
 --     local venv = vim.fn.findfile("pyproject.toml", vim.fn.getcwd() .. ";")
+--     print("Venv: " .. venv)
 --     if venv ~= "" then
 --       require("venv-selector").retrieve_from_cache()
 --     end
@@ -10,6 +11,16 @@
 --
 --   once = true,
 -- })
+local config_group = vim.api.nvim_create_augroup('MyConfigGroup', {}) -- A global group for all your config autocommands
+
+vim.api.nvim_create_autocmd({ 'User' }, {
+  pattern = "SessionLoadPost",
+  group = config_group,
+  callback = function()
+    require("venv-selector").retrieve_from_cache()
+  end,
+})
+
 return {
   "linux-cultist/venv-selector.nvim",
   dependencies = {
