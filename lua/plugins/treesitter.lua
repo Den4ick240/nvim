@@ -17,6 +17,7 @@ return {
       "vim",
       "yaml",
       "kotlin",
+      "c_sharp",
     },
   },
 }
