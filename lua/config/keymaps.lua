@@ -20,16 +20,5 @@ vim.keymap.set("x", "<leader>c", '"_c')
 vim.keymap.set("x", "<leader>d", '"_d')
 
 vim.keymap.set("n", "<C-q>", function()
-  local wins = vim.api.nvim_tabpage_list_wins(0)
-  local win_amount = 0
-  for i, w in ipairs(wins) do
-    if not vim.api.nvim_win_get_config(w).zindex then
-      win_amount = win_amount + 1
-    end
-  end
-  if win_amount == 1 then
-    require("mini.bufremove").delete(0, false)
-  else
-    vim.api.nvim_win_close(0, false)
-  end
+  require("mini.bufremove").delete(0, false)
 end, { desc = "Delete buffer" })
