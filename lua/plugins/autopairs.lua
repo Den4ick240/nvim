@@ -17,18 +17,18 @@ return {
       },
     },
   },
-  {
-    "windwp/nvim-ts-autotag",
-    init = function()
-      require("nvim-treesitter.configs").setup({
-        autotag = {
-          enable = true,
-        },
-      })
-    end,
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "windwp/nvim-autopairs",
-    },
-  },
+  -- {
+  --   "windwp/nvim-ts-autotag",
+  --   init = function()
+  --     require("nvim-treesitter.configs").setup({
+  --       autotag = {
+  --         enable = true,
+  --       },
+  --     })
+  --   end,
+  --   dependencies = {
+  --     "nvim-treesitter/nvim-treesitter",
+  --     "windwp/nvim-autopairs",
+  --   },
+  -- },
 }

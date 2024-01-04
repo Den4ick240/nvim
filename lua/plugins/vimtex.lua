@@ -19,7 +19,8 @@ vim.g.vimtex_compiler_latexmk_engines = {
 
 vim.g.vimtex_compiler_progname = "nvr"
 
-vim.g.vimtex_view_method = "sioyek"
+-- vim.g.vimtex_view_method = "sioyek"
+vim.g.vimtex_view_method = 'zathura'
 
 return {
   "lervag/vimtex",

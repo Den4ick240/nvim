@@ -18,6 +18,10 @@ return {
       "yaml",
       "kotlin",
       "c_sharp",
+      "c",
+      "cpp",
+      "cmake",
+      "glsl",
     },
   },
 }

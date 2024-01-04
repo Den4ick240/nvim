@@ -5,7 +5,7 @@ return {
     {
       "<A-1>",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = require("lazyvim.util").get_root() })
+        require("neo-tree.command").execute({ toggle = true, dir = require("lazyvim.util").root.get() })
       end,
       desc = "Explorer NeoTree (root dir)",
     },
@@ -51,7 +51,7 @@ return {
       },
     },
     filesystem = {
-      follow_current_file = true,
+      follow_current_file = { enabled = true },
       -- filtered_items = {
       --   visible = true,
       --   hide_dotfiles = false,

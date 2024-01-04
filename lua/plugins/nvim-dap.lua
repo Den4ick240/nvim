@@ -31,6 +31,16 @@ return {
     keys = { { "<leader>dc", false } },
     config = function()
       require("dap").set_log_level("TRACE")
+      require("dap").adapters.gdb = {
+        type = "executable",
+        command = "gdb",
+        args = { "-i", "dap" }
+      }
+      require("dap").adapters.cpp = {
+        id = 'cppdbg',
+        type = 'executable',
+        command = '/home/den4ick240/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+      }
     end,
   },
   {
@@ -52,4 +62,7 @@ return {
       },
     },
   },
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+  }
 }

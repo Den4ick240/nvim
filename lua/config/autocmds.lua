@@ -29,7 +29,7 @@ _G.xelatexcheck = function()
   end
 end
 
-vim.api.nvim_create_autocmd({ "BufRead" }, { pattern = { "*.tex" }, callback = xelatexcheck })
+-- vim.api.nvim_create_autocmd({ "BufRead" }, { pattern = { "*.tex" }, callback = xelatexcheck })
 
 -- -- close some filetypes with <q>
 -- vim.api.nvim_create_autocmd("FileType", {

@@ -1,6 +1,9 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    init = function() 
+      require 'lspconfig'.glsl_analyzer.setup {}
+    end,
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
@@ -11,7 +14,7 @@ return {
             pylsp = {
               plugins = {
                 pycodestyle = {
-                  ignore = { "W391", "W503" },
+                  ignore = { "W391", "W503", "E203" },
                   maxLineLength = 100,
                 },
                 rope_completion = {
